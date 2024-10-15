@@ -94,5 +94,5 @@ pub struct ProjectInvoice {
     pub session_id: Uuid,
     pub project_id: Uuid,
     pub date: NaiveDate,
-    pub invoice_pdf: Vec<u8>,
+    pub invoice_pdf_path: String,
 }
