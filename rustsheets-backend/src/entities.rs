@@ -1,7 +1,7 @@
-use chrono::{DateTime, Utc, NaiveDate};
+use crate::consts::{Blockchain, TimestampType};
+use chrono::{DateTime, NaiveDate, Utc};
 use sqlx::FromRow;
 use uuid::Uuid;
-use crate::consts::{Blockchain, TimestampType};
 
 #[derive(FromRow, Debug, Clone)]
 pub struct User {
@@ -102,4 +102,3 @@ pub struct Executor {
     pub id: Uuid,
     pub name: String,
 }
-
