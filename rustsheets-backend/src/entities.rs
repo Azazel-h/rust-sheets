@@ -96,3 +96,10 @@ pub struct ProjectInvoice {
     pub date: NaiveDate,
     pub invoice_pdf_path: String,
 }
+
+#[derive(FromRow, Debug, Clone)]
+pub struct Executor {
+    pub id: Uuid,
+    pub name: String,
+}
+
